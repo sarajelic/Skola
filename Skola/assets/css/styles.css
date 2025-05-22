@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'FrederickSans';
-    src: url('fonts/FrederickSans.woff') format('woff');
+    src: url('fonts/FrederickSansRegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -17,6 +17,13 @@ header {
     background: #222;
     padding: 20px;
     text-align: center;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    /* Optional: add margin if you want space around the logo */
+    margin-right: 1em;
 }
 
 nav ul {
@@ -108,6 +115,13 @@ button {
 
 #social-media a:hover {
     text-decoration: underline;
+}
+
+.about-content {
+    max-width: 1000px;
+    margin: 0 auto 2em auto;
+    /* Optional: add padding for even better look */
+    padding: 0 1em;
 }
 
 .center-text {
