@@ -44,6 +44,14 @@ body {
     color: #ff0000 !important;
 }
 
+/* Restore white hamburger icon and border for navbar toggler */
+.navbar-toggler {
+    border-color: #ffffff;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
 /* Main content */
 
 .about-content {
@@ -94,21 +102,38 @@ footer {
     letter-spacing: 1px;
 }
 
-/* Responsive tweaks */
-
-/* Navbar toggler button contrast */
-.navbar-toggler {
-    border-color: #fff;
+/* Contact section centering and width */
+#contact {
+    max-width: 500px;
+    margin: 0 auto 2rem auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.navbar-toggler-icon {
-    filter: invert(1);
+#contact h2 {
+    text-align: center;
+    width: 100%;
 }
 
-/* Adjust footer text alignment on small screens */
+#contact form {
+    width: 100%;
+}
+
+#contact button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+}
+
 @media (max-width: 576px) {
     footer {
         text-align: center;
+    }
+
+    #contact {
+        max-width: 100%;
+        padding: 0 1rem;
     }
 }
 
@@ -157,4 +182,22 @@ ul {
 /* Utility classes */
 .text-white {
     color: #fff !important;
+}
+
+/* Gallery image containers for uniform grid */
+.gallery-img-container {
+    aspect-ratio: 1/1;
+    width: 100%;
+    overflow: hidden;
+    background: #222;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
