@@ -67,7 +67,11 @@ Other sections you might add:
 
 ## About the Project
 <!-- See tips above: add your motivation, goals, reasoning, audience, and inspiration here. -->
-This is the official website for Škola Bend, an alternative rock/punk band from Zagreb. The site provides information about the band, a gallery of live performances, and a contact form for fans and event organizers. The design is modern, accessible, and responsive, ensuring a great experience on all devices.
+This is the official website for Škola Bend, an alternative rock/punk band from Zagreb, Croatia. The site provides information about the band, a gallery of live performances, and a contact form for fans and event organizers. The design is modern, accessible, and responsive, ensuring a great experience on all devices.
+
+The motivation behind this project came from a good friend of mine, who is a band member in Skola alongside her brother, cousin, boyfriend and friend, all of whom I know very well. They have been playing music together for about 3 years. Last year, they began playing in live music pubs, bars, and progressed to performing ahead of well known bands and musicians in small festivals. They created and released their first official song called "Ova Pjesma" (or in English: "This Song") earlier this year.
+
+Due to their fast progression within Croatian music industry, they told me their next step was to get a website made, for bigger and more official exposure of band to fans, music event bookers, ...
 
 ## Features
 <!-- List all major and planned features. -->
