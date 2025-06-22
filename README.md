@@ -411,6 +411,14 @@ Below are screenshots of the real, finished site on both desktop and mobile devi
 
 ### Home (About Us)
 
+**Lighthouse Scores:**
+- Performance: 89
+- Accessibility: 93
+- Best Practices: 78
+- SEO: 91
+
+![Lighthouse Report – Home (About Us)](assets/images/lighthouse/index.png)
+
 **Desktop – Navbar:**
 
 ![About Us Desktop Navbar](assets/images/pages/about-us-desktop-navbar.png)
@@ -428,6 +436,14 @@ Below are screenshots of the real, finished site on both desktop and mobile devi
 ![About Us Mobile Dropdown](assets/images/pages/about-us-mobile-dropdown.png)
 
 ### Gallery
+
+**Lighthouse Scores:**
+- Performance: 100
+- Accessibility: 92
+- Best Practices: 100
+- SEO: 91
+
+![Lighthouse Report – Gallery](assets/images/lighthouse/gallery.png)
 
 **Desktop – Navbar:**
 
@@ -447,6 +463,14 @@ Below are screenshots of the real, finished site on both desktop and mobile devi
 
 ### Contact
 
+**Lighthouse Scores:**
+- Performance: 93
+- Accessibility: 94
+- Best Practices: 100
+- SEO: 91
+
+![Lighthouse Report – Contact](assets/images/lighthouse/contact.png)
+
 **Desktop:**
 
 ![Contact Desktop](assets/images/pages/contact-desktop.png)
@@ -456,6 +480,14 @@ Below are screenshots of the real, finished site on both desktop and mobile devi
 ![Contact Mobile](assets/images/pages/contact-mobile.png)
 
 ### Feedback
+
+**Lighthouse Scores:**
+- Performance: 93
+- Accessibility: 93
+- Best Practices: 100
+- SEO: 91
+
+![Lighthouse Report – Feedback](assets/images/lighthouse/feedback.png)
 
 **Desktop:**
 
@@ -586,6 +618,12 @@ assets/
         krv.webp
         maksivaroko.webp
         whole-band.webp
+    lighthouse/
+      contact.png
+      feedback.png
+      gallery.png
+      index.png
+      overall.png
     pages/
       about-us-desktop-footer.png
       about-us-desktop-navbar.png
@@ -653,6 +691,15 @@ README.md
 
 - **W3C Markup Validator:** Verified HTML markup compliance with web standards to ensure cross-browser compatibility and accessibility.
 - **W3C CSS Validator:** Checked CSS code quality, adherence to standards, and detected potential styling issues early.
+- **Google Lighthouse:** Audited site performance, accessibility, best practices, and SEO. Used both text scores and full report screenshots for documentation and continuous improvement.
+
+> **Overall Lighthouse Audit:**
+> - Performance: 73
+> - Accessibility: 93
+> - Best Practices: 78
+> - SEO: 91
+>
+> ![Overall Lighthouse Report](assets/images/lighthouse/overall.png)
 
 ### Additional Tools
 
@@ -664,17 +711,6 @@ README.md
 - **Red Ketchup Image Resizer:** Resize and compress images efficiently.
 - **FreeConvert PNG to WebP:** Quick online conversion tool for PNG to webp.
 - **ImageResizer:** Download and resize images with ease.
-
----
-
-## Testing
-
-Comprehensive testing was performed to ensure a seamless user experience across different environments:
-
-- **Cross-Browser Testing:** Verified consistent functionality and appearance in major browsers such as Chrome, Firefox, Safari, and Edge.
-- **Responsive Testing:** Ensured the website adapts fluidly to various screen sizes and device types, maintaining usability on mobiles, tablets, and desktops.
-- **Accessibility Audits:** Conducted checks using screen readers and accessibility tools to confirm compliance with WCAG guidelines, including keyboard navigation and ARIA attributes.
-- **Form Validation:** Implemented both client-side and server-side validation for contact forms to provide immediate feedback and prevent erroneous submissions.
 
 ---
 
@@ -740,7 +776,7 @@ git push -u origin main
 ### Code & Text Content
 
 - Sara Jelic — Development, content writing, and design.
-- ChatGPT — Assistance with writing.
+- ChatGPT — Assistance with professional writing of text.
 
 ### Media
 
