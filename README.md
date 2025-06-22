@@ -77,6 +77,22 @@ To create an official website for the band that showcases their music and style,
 
 ### Index Page (About Page)
 
+#### Band Member (Owner)
+
+- **User Story:**  
+  As a member of Škola Bend, I want our band’s story, lineup, and achievements to be front and center on the homepage, so visitors immediately understand who we are and what makes us unique.
+
+- **Acceptance Criteria:**  
+  - Prominent section with the band’s collective story and values is visible on page load.  
+  - The full band lineup is listed by name.  
+  - Achievements, milestones, and unique aspects of the band are highlighted (for now - first song release).  
+  - Easy-to-find links for booking/contact and social media.
+
+- **Test Cases:**  
+  - Verify that the band’s story and lineup are present and accurate.  
+  - Check that achievements and milestones are clearly displayed.  
+  - Ensure booking/contact links are visible and functional.
+
 #### Visitor
 
 - **User Story:**  
@@ -135,6 +151,22 @@ To create an official website for the band that showcases their music and style,
 
 ### Gallery Page
 
+#### Band Member (Owner)
+
+- **User Story:**  
+  As a member of Škola Bend, I want our gallery to showcase our best live moments and performances, so fans and event organizers can see our energy and stage presence.
+
+- **Acceptance Criteria:**  
+  - Gallery features high-quality images from gigs and events.  
+  - Photos highlight the band’s energy, style, and connection with the audience.  
+  - Images are organized by event or theme, with clear captions or context.  
+  - Easy-to-use layout for both desktop and mobile users.
+
+- **Test Cases:**  
+  - Verify that images from key performances are present and load correctly.  
+  - Check that the gallery layout is responsive and accessible.  
+  - Confirm that captions/context are accurate and helpful.
+
 #### Visitor
 
 - **User Story:**  
@@ -191,6 +223,22 @@ To create an official website for the band that showcases their music and style,
 
 ### Contact Page
 
+#### Band Member (Owner)
+
+- **User Story:**  
+  As a member of Škola Bend, I want an easy way for fans, organizers, and collaborators to contact us, so we never miss an opportunity or message.
+
+- **Acceptance Criteria:**  
+  - Contact form is simple, accessible, and works on all devices.  
+  - All messages are delivered to the band (or a designated contact).  
+  - Social media and alternative contact options are visible.  
+  - Confirmation/thank-you message is shown after submission.
+
+- **Test Cases:**  
+  - Submit a test message and verify receipt/confirmation.  
+  - Check that all contact options are visible and functional.  
+  - Confirm form works on desktop and mobile.
+
 #### Visitor
 
 - **User Story:**  
@@ -241,57 +289,46 @@ To create an official website for the band that showcases their music and style,
 
 ### Feedback Page
 
+#### Band Member (Owner)
+
+- **User Story:**  
+  As a member of Škola Bend, I want users to see a clear confirmation that their message was sent successfully, so they know we received their contact form submission.
+
+- **Acceptance Criteria:**  
+  - The page displays a clear confirmation or thank-you message after the contact form is submitted.  
+  - There is a visible button or link to return to the contact page or main site.  
+  - No feedback form or comment fields are present.
+
+- **Test Cases:**  
+  - Submit the contact form and verify the confirmation message appears.  
+  - Check that the "Go Back" button or link works as intended.
+
 #### Visitor
 
 - **User Story:**  
-  I want to provide feedback and know that it reaches the band.
+  I want to know that my message to the band was sent successfully, so I feel confident my inquiry was received.
 
 - **Acceptance Criteria:**  
-  - Feedback form is functional and easy to use.  
-  - Confirmation message is shown after submission.
+  - A confirmation or thank-you message is shown after submitting the contact form.  
+  - There is a clear way to return to the contact page or main site.
 
 - **Test Cases:**  
-  - Submit feedback and verify confirmation appears.  
-  - Confirm form resets after submission.
-
-#### Fan
-
-- **User Story:**  
-  I want to leave comments or suggestions to support the band.
-
-- **Acceptance Criteria:**  
-  - Form includes optional comment or message fields.  
-  - Interface is user-friendly and accessible.
-
-- **Test Cases:**  
-  - Confirm presence of comment field.  
-  - Test form usability on mobile and desktop.
-
-#### Event Organizer
-
-- **User Story:**  
-  I want to provide detailed event feedback or testimonials for the band.
-
-- **Acceptance Criteria:**  
-  - Feedback form allows longer text inputs.  
-  - Optional fields for contact details if they want follow-up.
-
-- **Test Cases:**  
-  - Verify form accepts extended messages without truncation.  
-  - Check optional contact fields work.
+  - Submit the contact form and verify the confirmation message appears.  
+  - Click the "Go Back" button or link and confirm it works.
 
 #### Developer
 
 - **User Story:**  
-  I want to securely log and manage feedback submissions.
+  I want the feedback confirmation page to be simple, accessible, and free of unnecessary forms or fields.
 
 - **Acceptance Criteria:**  
-  - Feedback submissions are forwarded or stored safely.  
-  - No data loss or errors during submission.
+  - Page contains only a confirmation message and navigation option.  
+  - No feedback/comment form is present.  
+  - Page is accessible and works on all devices.
 
 - **Test Cases:**  
-  - Confirm backend/email receives feedback data.  
-  - Test submission under various conditions for reliability.
+  - Inspect the page to confirm only confirmation content is present.  
+  - Test accessibility and navigation on desktop and mobile.
 
 ---
 
