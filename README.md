@@ -674,10 +674,6 @@ git push -u origin main
 
 ---
 
-**Note:** The current contact form on the site is a static mockup; submitting messages does not trigger any email or backend process. It can be connected to an actual email service or backend form handler if required for real message delivery.
-
----
-
 ## Bugs & Fixes
 
 - **Font Choice & Special Characters:**
@@ -688,8 +684,22 @@ git push -u origin main
   Some gallery images had inconsistent heights, causing a visually uneven layout. Attempts to resize them uniformly led to pixelation and quality loss. After consulting with a mentor, I implemented thumbnail images linked to full-size versions, optimized and compressed using WebP format to maintain quality while improving load times and compatibility across browsers.
 - **Contact Form Functionality:**
   The contact page originally included a Formspree integration to send messages to an email address. However, submitting the form redirected users away from the site to the Formspree feedback page, which disrupted the user experience. Opening the form in a new tab caused the “Go Back” button on the Formspree page to malfunction because there was no browsing history in the new tab. To address this, I replaced the form with a mockup version that does not send data externally but navigates users to a custom feedback page within the site. This mockup is for demonstration purposes; the form can be connected to an email service if the band chooses to use the site live.
-- **Browser Autofill Font Limitation:**
-  Modern browsers (especially Chrome) apply their own styles to autofilled form fields, which can override custom fonts even with aggressive CSS. Despite using all best-practice CSS workarounds (`!important`, autofill pseudo-classes, keyframes hacks, and parent selectors), browsers may still display autofilled text in a default font instead of the site’s custom font. This is a browser limitation and cannot be fully fixed with CSS alone. All other field styles (background, color, border) are preserved. If browser support changes in the future, the site’s CSS is ready to take advantage of it.
+
+---
+
+## Additional Notes
+
+- **Browser Autofill Font Note:**
+  When hovering over browser autofill suggestions (e.g., in Chrome), the font in the input field may temporarily appear as the browser's default font. However, once an autofill option is selected (clicked), the field displays using the site's custom font as intended. This is a browser UI behavior and does not affect the final appearance of autofilled text.
+  
+- **Contact Form Mockup Note:**
+  The current contact form on the site is a static mockup; submitting messages does not trigger any email or backend process. It can be connected to an actual email service or backend form handler if required for real message delivery.
+
+- **Code Institute Template Files Note:**
+  At the beginning of the project, I used the Code Institute template, which resulted in extra files (such as `.gitpod.dockerfile`, `.gitpod.yml`, and `.vscode`) being present on GitHub that were not used in the project. These files do not appear in my VS Code (they seem to be hidden), so I am unable to delete them directly. In future projects, I will use a `.gitignore` file to exclude any unused template files if I start from a similar template.
+
+- **YouTube Embed Performance Note:**
+  The embedded YouTube video on the homepage uses a standard iframe, which can impact page performance and Lighthouse scores due to third-party scripts and resources loading immediately. Pure CSS cannot be used to lazy-load or defer YouTube iframes—this requires JavaScript to swap in the iframe after user interaction. In the future, a JavaScript-based lazy-loading solution can be implemented to improve performance and reduce third-party impact, but for now, the standard embed is used for maximum compatibility and to avoid custom JavaScript.
 
 ---
 
@@ -714,3 +724,5 @@ git push -u origin main
 
 <!-- State the license type and link to the LICENSE file. -->
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---

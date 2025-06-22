@@ -146,6 +146,12 @@ ul {
     text-decoration: underline;
 }
 
+/* Make the current page nav link non-clickable but still crawlable and accessible */
+.navbar-nav .nav-link[aria-current="page"] {
+  pointer-events: none;
+  cursor: default;
+}
+
 .navbar-toggler {
     border-color: #ffffff;
 }
@@ -574,5 +580,3 @@ a:focus-visible, button:focus-visible, .social-icon:focus-visible {
 #contact.contact-punk-contrast-bg p {
   white-space: nowrap;
 }
-
-/* === END OF STYLES === */
