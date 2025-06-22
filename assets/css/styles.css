@@ -513,6 +513,21 @@ button:hover, .btn:hover {
     }
 }
 
+@media (max-width: 768px) {
+  .navbar-nav .nav-link.active {
+    display: inline-block;
+    width: auto;
+    border-radius: 8px;
+    margin: 0.25rem auto;
+    border-width: 2.5px;
+    box-sizing: border-box;
+    max-width: 90vw;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+}
+
 /* === 10. Sticky Footer Layout ===
    Ensures footer stays at the bottom even on short pages. */
 html, body {
