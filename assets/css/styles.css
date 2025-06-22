@@ -96,6 +96,10 @@ ul {
     align-items: center;
 }
 
+.navbar-logo {
+  height: 80px;
+}
+
 .navbar-brand img {
     height: 80px;
     width: auto;
@@ -108,11 +112,32 @@ ul {
     font-weight: normal;
     transition: color 0.3s ease;
     text-decoration: none;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
 }
 
 .navbar-nav .nav-link.active {
-    color: #ff0000 !important;
+    color: #fff !important;
+    background-color: #222 !important;
+    border: 2.5px solid #ff0000 !important;
+    border-radius: 8px;
     text-decoration: underline !important;
+    font-weight: bold;
+    box-shadow: 0 2px 8px 0 rgba(255,0,0,0.15);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    outline: 3px solid #ff0000;
+    outline-offset: 2px;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.navbar-nav .nav-link.active:focus-visible {
+    outline: 3px solid #ff0000;
+    outline-offset: 2px;
 }
 
 .navbar-nav .nav-link:hover,
@@ -238,7 +263,8 @@ footer,
     background-color: #111;
     color: #fff;
     border: 1px solid #444;
-    font-family: 'SpecialElite', sans-serif;
+    font-family: 'SpecialElite', sans-serif !important;
+    font-size: 1rem !important;
 }
 
 #contact input::placeholder,
@@ -252,16 +278,56 @@ footer,
     background-color: #ff0000;
     color: #fff;
     font-family: 'SpecialElite', sans-serif;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     padding: 10px 18px;
-    border: none;
+    min-width: 44px;
+    min-height: 44px;
+    border: 4px dashed #000;
+    border-radius: 7px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-weight: 900;
+    font-size: 1rem;
+    text-shadow: 2px 2px 0 #000, 0 1px 2px #fff;
+    box-shadow: 0 4px 24px 0 #000, 0 2px 12px 0 rgba(0,0,0,0.18);
+    transition: background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s;
+    position: relative;
+    z-index: 2;
+    user-select: none;
 }
 
 #contact button[type="submit"]:hover,
 #contact .btn:hover {
-    background-color: #cc0000;
+    background-color: #fff;
+    color: #ff0000;
+    border-color: #ff0000;
+    text-shadow: 2px 2px 0 #fff, 0 1px 2px #000;
+    box-shadow: 0 0 0 6px #fff, 0 4px 24px 0 #000;
+    outline: 4px solid #fff;
+    outline-offset: 3px;
+}
+
+#contact button[type="submit"]:focus-visible,
+#contact .btn:focus-visible {
+    background: #ff0000;
+    color: #fff;
+    border-color: #000;
+    box-shadow: 0 0 0 6px #fff, 0 4px 24px 0 #000;
+    outline: 4px solid #fff;
+    outline-offset: 3px;
+}
+
+#contact input:-webkit-autofill,
+#contact textarea:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-duration: 1ms;
+    font-family: 'SpecialElite', sans-serif !important;
+    font-size: 1rem !important;
+    color: #fff !important;
+    background: #111 !important;
+    -webkit-text-fill-color: #fff !important;
+    -webkit-box-shadow: 0 0 0 1000px #111 inset !important;
+    box-shadow: 0 0 0 1000px #111 inset !important;
 }
 
 /* === 5. Punk-Inspired Contact Page Backgrounds === */
@@ -406,24 +472,32 @@ button:hover, .btn:hover {
 .go-back-btn {
   display: block;
   margin: 0 auto;
-  max-width: 200px;
+  max-width: 260px;
+  min-width: 44px;
+  min-height: 44px;
   background-color: #ff0000;
   color: #fff;
-  border: 2.5px solid #fff;
+  border: 4px dashed #000;
+  border-radius: 7px;
   font-family: 'SpecialElite', sans-serif;
-  letter-spacing: 1.5px;
-  font-weight: bold;
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-size: 1rem;
   text-align: center;
-  text-shadow: 0 1px 2px #000;
-  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.18);
-  transition: background 0.2s, color 0.2s, border 0.2s;
+  text-shadow: 2px 2px 0 #000, 0 1px 2px #fff;
+  box-shadow: 0 4px 24px 0 #000, 0 2px 12px 0 rgba(0,0,0,0.18);
+  transition: background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s;
+  user-select: none;
 }
 .go-back-btn:hover,
 .go-back-btn:focus {
   background-color: #fff;
   color: #ff0000;
   border-color: #ff0000;
-  text-shadow: none;
+  text-shadow: 2px 2px 0 #fff, 0 1px 2px #000;
+  box-shadow: 0 0 0 6px #fff, 0 4px 24px 0 #000;
+  outline: 4px solid #fff;
+  outline-offset: 3px;
 }
 
 /* === 9. Responsive/Media Queries === */

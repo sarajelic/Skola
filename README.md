@@ -24,7 +24,6 @@
   - [Responsive Design](#responsive-design)
 - [Accessibility Considerations](#accessibility-considerations)
 - [Features](#features)
-- [Folder Structure](#folder-structure)
 - [Additional Features](#additional-features)
 - [Technologies Used](#technologies-used)
   - [Development Tools](#development-tools)
@@ -575,85 +574,6 @@ Below are screenshots of the real, finished site on both desktop and mobile devi
 - Consistent navigation and footer across all pages
 - Visually hidden text for screen readers
 
-## Folder Structure
-
-```
-assets/
-  css/
-    styles.css
-  fonts/
-    SpecialElite-Regular.woff
-  images/
-    favicon.ico
-    skolalogo.png
-    gajnice/
-      large/
-        all.webp
-        eva-playing-drums.webp
-        everybody-except-eva.webp
-        iva-playing-bass-guitar.webp
-        max-davor-iva.webp
-      thumbnail/
-        all.webp
-        eva-playing-drums.webp
-        everybody-except-eva.webp
-        iva-playing-bass-guitar.webp
-        max-davor-iva.webp
-    ksff/
-      large/
-        davor-and-antun.webp
-        eva.webp
-        fico.webp
-        ivamakseva.webp
-        jura.webp
-        krv.webp
-        maksivaroko.webp
-        whole-band.webp
-      thumbnail/
-        davor-and-antun.webp
-        eva.webp
-        fico.webp
-        ivamakseva.webp
-        jura.webp
-        krv.webp
-        maksivaroko.webp
-        whole-band.webp
-    lighthouse/
-      contact.png
-      feedback.png
-      gallery.png
-      index.png
-      overall.png
-    pages/
-      about-us-desktop-footer.png
-      about-us-desktop-navbar.png
-      about-us-mobile-dropdown.png
-      about-us-mobile.png
-      contact-desktop.png
-      contact-mobile.png
-      feedback-desktop.png
-      feedback-mobile.png
-      gallery-desktop-footer.png
-      gallery-desktop-navbar.png
-      gallery-mobile-footer.png
-      gallery-mobile-hovered-over-navbar.png
-    wireframes/
-      about-us-desktop.png
-      about-us-mobile.png
-      contact-desktop.png
-      contact-mobile.png
-      feedback-desktop.png
-      feedback-mobile.png
-      gallery-desktop.png
-      gallery-mobile.png
-contact.html
-gallery.html
-index.html
-feedback.html
-README.md
-
-```
-
 ## Additional Features
 
 - Keyboard-accessible navigation through Bootstrap ensuring usability for all users.
@@ -768,6 +688,8 @@ git push -u origin main
   Some gallery images had inconsistent heights, causing a visually uneven layout. Attempts to resize them uniformly led to pixelation and quality loss. After consulting with a mentor, I implemented thumbnail images linked to full-size versions, optimized and compressed using WebP format to maintain quality while improving load times and compatibility across browsers.
 - **Contact Form Functionality:**
   The contact page originally included a Formspree integration to send messages to an email address. However, submitting the form redirected users away from the site to the Formspree feedback page, which disrupted the user experience. Opening the form in a new tab caused the “Go Back” button on the Formspree page to malfunction because there was no browsing history in the new tab. To address this, I replaced the form with a mockup version that does not send data externally but navigates users to a custom feedback page within the site. This mockup is for demonstration purposes; the form can be connected to an email service if the band chooses to use the site live.
+- **Browser Autofill Font Limitation:**
+  Modern browsers (especially Chrome) apply their own styles to autofilled form fields, which can override custom fonts even with aggressive CSS. Despite using all best-practice CSS workarounds (`!important`, autofill pseudo-classes, keyframes hacks, and parent selectors), browsers may still display autofilled text in a default font instead of the site’s custom font. This is a browser limitation and cannot be fully fixed with CSS alone. All other field styles (background, color, border) are preserved. If browser support changes in the future, the site’s CSS is ready to take advantage of it.
 
 ---
 
