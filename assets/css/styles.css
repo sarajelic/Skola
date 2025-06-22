@@ -275,7 +275,7 @@ footer,
 
 #contact button[type="submit"],
 #contact .btn {
-    background-color: #ff0000;
+    background-color: #b20000;
     color: #fff;
     font-family: 'SpecialElite', sans-serif;
     letter-spacing: 2px;
@@ -298,8 +298,8 @@ footer,
 #contact button[type="submit"]:hover,
 #contact .btn:hover {
     background-color: #fff;
-    color: #ff0000;
-    border-color: #ff0000;
+    color: #b20000;
+    border-color: #b20000;
     text-shadow: 2px 2px 0 #fff, 0 1px 2px #000;
     box-shadow: 0 0 0 6px #fff, 0 4px 24px 0 #000;
     outline: 4px solid #fff;
@@ -308,7 +308,7 @@ footer,
 
 #contact button[type="submit"]:focus-visible,
 #contact .btn:focus-visible {
-    background: #ff0000;
+    background: #b20000;
     color: #fff;
     border-color: #000;
     box-shadow: 0 0 0 6px #fff, 0 4px 24px 0 #000;
@@ -399,21 +399,21 @@ footer,
 }
 #contact.contact-punk-contrast-bg .btn,
 #contact.contact-punk-contrast-bg button[type='submit'] {
-  border: 2.5px solid #fff;
+  border: 2.5px solid #b20000;
   box-shadow: 0 2px 12px 0 rgba(0,0,0,0.18);
   font-weight: bold;
-  background-color: #ff0000;
-  color: #fff;
-  text-shadow: 0 1px 2px #000;
+  background-color: #fff;
+  color: #b20000;
+  text-shadow: none;
   letter-spacing: 1.5px;
   transition: background 0.2s, color 0.2s, border 0.2s;
 }
 #contact.contact-punk-contrast-bg .btn:hover,
 #contact.contact-punk-contrast-bg button[type='submit']:hover {
-  background-color: #fff;
-  color: #ff0000;
-  border-color: #ff0000;
-  text-shadow: none;
+  background-color: #b20000;
+  color: #fff;
+  border-color: #fff;
+  text-shadow: 0 1px 2px #000;
 }
 
 /* === 6. Gallery Styles === */
@@ -450,6 +450,8 @@ footer,
     clip: rect(0, 0, 0, 0) !important;
     white-space: nowrap !important;
     border: 0 !important;
+    color: transparent !important;
+    background: none !important;
 }
 
 /* === 8. Button Styles (Global) === */
