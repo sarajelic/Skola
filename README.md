@@ -702,8 +702,8 @@ git push -u origin main
 
 ### Code & Text Content
 
-- [Your Name] — Development, content writing, and design.
-- ChatGPT — Assistance with writing and coding.
+- Sara Jelic — Development, content writing, and design.
+- ChatGPT — Assistance with writing.
 
 ### Media
 
