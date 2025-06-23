@@ -1,728 +1,423 @@
 # Škola Bend Website
 
 ## Table of Contents
-- [About](#about)
-- [Design & Planning](#design--planning)
-  - [Brand Identity](#brand-identity)
-  - [Objectives](#objectives)
-    - [Main Objective](#main-objective)
-    - [Supporting Objectives](#supporting-objectives)
-  - [User Stories, Acceptance Criteria & Test Cases](#user-stories-acceptance-criteria--test-cases)
-    - [Index Page (About Page)](#index-page-about-page)
-    - [Gallery Page](#gallery-page)
-    - [Contact Page](#contact-page)
-    - [Feedback Page](#feedback-page)
-- [Wireframes](#wireframes)
-- [Screenshots](#screenshots)
-- [Design & Styling Details](#design--styling-details)
+- [Site Overview](#1-site-overview)
+- [Planning Stage](#2-planning-stage)
+  - [Target Audiences](#target-audiences)
+  - [User Stories](#user-stories)
+- [Site Aims](#3-site-aims)
+  - [Main Objective](#main-objective)
+  - [Supporting Objectives](#supporting-objectives)
+  - [How This Will Be Achieved](#how-this-will-be-achieved)
+- [Wireframes](#4-wireframes)
+- [Color Scheme](#5-color-scheme)
+- [Technologies Used](#6-technologies-used)
+- [Current Features (Common to All Pages)](#7-current-features-common-to-all-pages)
+  - [Header Element](#header-element)
+  - [Navigation Bar](#navigation-bar)
+  - [Anchor Tags (Within All Pages Main Content)](#anchor-tags-within-all-pages-main-content)
+  - [Footer](#footer)
   - [Typography](#typography)
-  - [Colour Scheme](#colour-scheme)
-  - [Layout & Structure](#layout--structure)
-  - [Components](#components)
-  - [Contact Form](#contact-form)
-  - [Accessibility](#accessibility)
-  - [Responsive Design](#responsive-design)
-- [Accessibility Considerations](#accessibility-considerations)
-- [Features](#features)
-- [Additional Features](#additional-features)
-- [Technologies Used](#technologies-used)
-  - [Development Tools](#development-tools)
-  - [Design & UI Tools](#design--ui-tools)
-  - [Testing & Validation Tools](#testing--validation-tools)
-  - [Additional Tools](#additional-tools)
-- [Testing](#testing)
-- [Deployment](#deployment)
-- [Stretch Goals & Future Enhancements](#stretch-goals--future-enhancements)
-- [Bugs & Fixes](#bugs--fixes)
-- [Credits](#credits)
-- [License](#license)
+- [Individual Page Content Features](#8-individual-page-content-features)
+  - [About Page Content](#about-page-content)
+  - [Gallery Page Content](#gallery-page-content)
+  - [Contact Page Content](#contact-page-content)
+  - [Form Feedback Page Content](#form-feedback-page-content)
+- [Future Enhancements](#9-future-enhancements)
+- [Testing Phase](#10-testing-phase)
+- [Deployment](#11-deployment)
+- [Credits](#12-credits)
+  - [Honorable Mentions](#honorable-mentions)
+  - [General Reference](#general-reference)
+  - [Content](#content)
+  - [Media](#media)
+- [License](#13-license)
+
+## 1. Site Overview
+
+This is the official website for **Škola Bend**, an energetic alternative rock/punk band hailing from Zagreb, Croatia. The site offers fans and event organizers an easy way to explore the band's story, enjoy a gallery of live performances, and get in touch through a simple contact form. Designed with a modern, accessible, and fully responsive layout, the website ensures a seamless experience on any device.
+
+![Responsive Look Reference](docs/responsive-look.png)
+
+The inspiration for this project came from a close friend who is part of Škola Bend, alongside family and friends—people I know well and have watched grow together through music. For the past three years, they've been passionately playing and honing their sound. Over the last year, they've taken the stage at local pubs, bars, and small festivals, even opening for well-known acts. Earlier this year, they released their debut single, **"Ova Pjesma"** ("This Song"), marking an exciting milestone in their journey.
+
+As their presence in the Croatian music scene quickly grows, they needed an official online hub where fans, friends, and event organizers could easily find reliable information. Since they're still emerging artists, the site focuses on essential content rather than extensive features like merchandise or tour dates. The goal was to create a bold, edgy punk vibe that resonates with their audience, informs newcomers about their music, and provides a direct point of contact for booking future gigs and events.
 
 ---
 
-## About
+## 2. Planning Stage
 
-This is the official website for Škola Bend, an energetic alternative rock/punk band hailing from Zagreb, Croatia. The site offers fans and event organizers an easy way to explore the band’s story, enjoy a gallery of live performances, and get in touch through a simple contact form. Designed with a modern, accessible, and fully responsive layout, the website ensures a seamless experience on any device.
+### Target Audiences
 
-The inspiration for this project came from a close friend who is part of Škola Bend, alongside family and friends—people I know well and have watched grow together through music. For the past three years, they’ve been passionately playing and honing their sound. Over the last year, they’ve taken the stage at local pubs, bars, and small festivals, even opening for well-known acts. Earlier this year, they released their debut single, “Ova Pjesma” (“This Song”), marking an exciting milestone in their journey.
-
-As their presence in the Croatian music scene quickly grows, they needed an official online hub where fans, friends, and event organizers could easily find reliable information. Since they’re still emerging artists, the site focuses on essential content rather than extensive features like merchandise or tour dates. The goal was to create a bold, edgy punk vibe that resonates with their audience, informs newcomers about their music, and provides a direct point of contact for booking future gigs and events.
+- **Band Members (Owners):** Need a professional online presence showcasing their story, lineup, and achievements with easy booking/contact options  
+- **Visitors:** Want to quickly learn about Škola Bend's music style to decide if they want to explore further  
+- **Fans:** Seek background information about band members and want to feel connected to their story  
+- **Event Organizers:** Need to understand the band's style and background to evaluate if they fit an event  
+- **Developers:** Require clean, semantic code for easy maintenance and accessibility  
 
 ---
 
-## Design & Planning
+### User Stories
 
-### Brand Identity
+#### Index Page (About Page)
 
-The design reflects Škola Bend’s edgy and dynamic personality, combining bold typography and a vibrant color palette that matches their musical style. Custom fonts and icons reinforce the band’s alternative aesthetic, while the layout prioritizes usability and accessibility.
+- **Band Member:**  
+  _"I want our band's story, lineup, and achievements to be front and center on the homepage, so visitors immediately understand who we are and what makes us unique."_
 
-### Objectives
+- **Visitor:**  
+  _"I want to quickly learn about Škola Bend and their music style, so I can decide if I want to explore further."_
 
-#### Main Objective
+- **Fan:**  
+  _"I want to find interesting background information about the band members to feel connected to their story."_
+
+- **Event Organizer:**  
+  _"I want to understand the band's style and background to evaluate if they fit an event."_
+
+#### Gallery Page
+
+- **Band Member:**  
+  _"I want our gallery to showcase our best live moments and performances, so fans and event organizers can see our energy and stage presence."_
+
+- **Visitor:**  
+  _"I want to browse images to get a feel for the band's live performances."_
+
+- **Fan:**  
+  _"I want to share gallery images on social media or save them."_
+
+- **Event Organizer:**  
+  _"I want to see photos that demonstrate the band's stage presence to assess professionalism."_
+
+#### Contact Page
+
+- **Band Member:**  
+  _"I want an easy way for fans, organizers, and collaborators to contact us, so we never miss an opportunity or message."_
+
+- **Visitor:**  
+  _"I want a straightforward way to reach the band with questions or messages."_
+
+- **Fan:**  
+  _"I want reassurance that my message was received after contacting the band."_
+
+- **Event Organizer:**  
+  _"I want to contact the band quickly to book a performance."_
+
+#### Feedback Page
+
+- **Band Member:**  
+  _"I want users to see a clear confirmation that their message was sent successfully, so they know we received their contact form submission."_
+
+- **Visitor:**  
+  _"I want to know that my message to the band was sent successfully, so I feel confident my inquiry was received."_
+
+---
+
+## 3. Site Aims
+
+### Main Objective
 
 To create an official website for the band that showcases their music and style, while providing an easy way for fans and event organizers to get in touch for bookings and inquiries.
 
-#### Supporting Objectives
+---
 
-- Ensure the website is fully responsive and accessible across all devices and screen sizes.
-- Create an intuitive navigation structure for easy browsing.
-- Incorporate a visually appealing, punk-inspired design that reflects the band’s identity.
-- Provide a gallery to showcase live performances and band moments.
-- Implement a contact form that is simple to use and accessible to all users.
-- Optimize site performance for fast loading times.
-- Include social media links to increase fan engagement and online presence.
-- Use semantic HTML and accessibility best practices to make the site usable by everyone, including those with disabilities.
+### Supporting Objectives
 
-## User Stories, Acceptance Criteria & Test Cases
-
-### Index Page (About Page)
-
-#### Band Member (Owner)
-
-- **User Story:**  
-  As a member of Škola Bend, I want our band’s story, lineup, and achievements to be front and center on the homepage, so visitors immediately understand who we are and what makes us unique.
-
-- **Acceptance Criteria:**  
-  - Prominent section with the band’s collective story and values is visible on page load.  
-  - The full band lineup is listed by name.  
-  - Achievements, milestones, and unique aspects of the band are highlighted (for now - first song release).  
-  - Easy-to-find links for booking/contact and social media.
-
-- **Test Cases:**  
-  - Verify that the band’s story and lineup are present and accurate.  
-  - Check that achievements and milestones are clearly displayed.  
-  - Ensure booking/contact links are visible and functional.
-
-#### Visitor
-
-- **User Story:**  
-  I want to quickly learn about Škola Bend and their music style, so I can decide if I want to explore further.
-
-- **Acceptance Criteria:**  
-  - Clear introduction of the band and music style is visible on page load.  
-  - Content is concise and easy to read.  
-  - Page loads quickly and looks good on desktop and mobile.
-
-- **Test Cases:**  
-  - Verify that the introduction text is present and accurate.  
-  - Check page responsiveness on various screen sizes.  
-  - Measure load time is under 3 seconds on a standard connection.
-
-#### Fan
-
-- **User Story:**  
-  I want to find interesting background information about the band members to feel connected to their story.
-
-- **Acceptance Criteria:**  
-  - Biographies or short profiles of band members are included or linked.  
-  - Band’s story and formation details are displayed clearly.
-
-- **Test Cases:**  
-  - Verify presence of bios or band story section.  
-  - Confirm the text is readable and free of errors.
-
-#### Event Organizer
-
-- **User Story:**  
-  I want to understand the band’s style and background to evaluate if they fit an event.
-
-- **Acceptance Criteria:**  
-  - Professional and concise band overview is provided.  
-  - Contact information or clear link to contact page is available.
-
-- **Test Cases:**  
-  - Confirm band overview includes music genre and achievements.  
-  - Ensure contact link/button is visible and functional.
-
-#### Developer
-
-- **User Story:**  
-  I want the homepage code to be clean and semantic for easy maintenance and accessibility.
-
-- **Acceptance Criteria:**  
-  - Semantic HTML elements like `<header>`, `<main>`, `<section>` used properly.  
-  - Accessibility features (ARIA roles, alt text) are implemented.
-
-- **Test Cases:**  
-  - Run accessibility audit (e.g., Lighthouse or axe).  
-  - Inspect HTML structure for semantic correctness.
+- Ensure the website is fully responsive and accessible across all devices and screen sizes  
+- Create an intuitive navigation structure for easy browsing  
+- Incorporate a visually appealing, punk-inspired design that reflects the band's identity  
+- Provide a gallery to showcase live performances and band moments  
+- Implement a contact form that is simple to use and accessible to all users  
+- Optimize site performance for fast loading times  
+- Include social media links to increase fan engagement and online presence  
+- Use semantic HTML and accessibility best practices to make the site usable by everyone, including those with disabilities  
 
 ---
 
-### Gallery Page
+### How This Will Be Achieved
 
-#### Band Member (Owner)
+- **Responsive Design:**  
+  Using Bootstrap 5.3.3 CSS framework for layout, grid, and components  
 
-- **User Story:**  
-  As a member of Škola Bend, I want our gallery to showcase our best live moments and performances, so fans and event organizers can see our energy and stage presence.
+- **Accessibility:**  
+  Implementing semantic HTML5 structure, ARIA roles and labels, high contrast colors, and keyboard navigation  
 
-- **Acceptance Criteria:**  
-  - Gallery features high-quality images from gigs and events.  
-  - Photos highlight the band’s energy, style, and connection with the audience.  
-  - Images are organized by event or theme, with clear captions or context.  
-  - Easy-to-use layout for both desktop and mobile users.
+- **Performance:**  
+  Optimizing images with WebP format, compressing assets, and using efficient loading strategies  
 
-- **Test Cases:**  
-  - Verify that images from key performances are present and load correctly.  
-  - Check that the gallery layout is responsive and accessible.  
-  - Confirm that captions/context are accurate and helpful.
+- **User Experience:**  
+  Creating intuitive navigation, clear content hierarchy, and consistent visual design  
 
-#### Visitor
+- **Brand Identity:**  
+  Custom typography (`SpecialElite` font), punk-inspired color scheme, and edgy visual elements  
 
-- **User Story:**  
-  I want to browse images to get a feel for the band’s live performances.
-
-- **Acceptance Criteria:**  
-  - Gallery displays images with captions or descriptions.  
-  - Clicking images opens them in a larger view or lightbox.
-
-- **Test Cases:**  
-  - Check images are displayed on page load.  
-  - Test image click opens lightbox/modal correctly.
-
-#### Fan
-
-- **User Story:**  
-  I want to share gallery images on social media or save them.
-
-- **Acceptance Criteria:**  
-  - Social sharing buttons or download options available near images.  
-  - Images are optimized for fast loading without quality loss.
-
-- **Test Cases:**  
-  - Verify social share buttons open correct share dialogs.  
-  - Confirm image downloads work if enabled.
-
-#### Event Organizer
-
-- **User Story:**  
-  I want to see photos that demonstrate the band’s stage presence to assess professionalism.
-
-- **Acceptance Criteria:**  
-  - Gallery contains a variety of high-quality live performance images.  
-  - Images reflect the band’s energy and professionalism.
-
-- **Test Cases:**  
-  - Validate presence of diverse live photos.  
-  - Confirm images load quickly and display correctly.
-
-#### Developer
-
-- **User Story:**  
-  I want gallery images optimized and lazy-loaded for performance.
-
-- **Acceptance Criteria:**  
-  - Use `srcset` for responsive images.  
-  - Lazy loading implemented to defer offscreen images.
-
-- **Test Cases:**  
-  - Inspect image elements for `srcset` attributes.  
-  - Use network throttling to test lazy loading.
+- **Functionality:**  
+  Contact form with validation, image gallery with responsive design, and social media integration  
 
 ---
 
-### Contact Page
+## 4. Wireframes
 
-#### Band Member (Owner)
+**Below are the Balsamiq wireframes for both desktop and mobile versions of each page.**  
+These wireframes were created during the planning phase to visualize the layout, navigation, and user flow before development began.
 
-- **User Story:**  
-  As a member of Škola Bend, I want an easy way for fans, organizers, and collaborators to contact us, so we never miss an opportunity or message.
+### Desktop Wireframes
 
-- **Acceptance Criteria:**  
-  - Contact form is simple, accessible, and works on all devices.  
-  - All messages are delivered to the band (or a designated contact).  
-  - Social media and alternative contact options are visible.  
-  - Confirmation/thank-you message is shown after submission.
+- [About Us Desktop Wireframe](docs/wireframes/about-us-desktop.png)
+- [Gallery Desktop Wireframe](docs/wireframes/gallery-desktop.png)
+- [Contact Desktop Wireframe](docs/wireframes/contact-desktop.png)
+- [Feedback Desktop Wireframe](docs/wireframes/feedback-desktop.png)
 
-- **Test Cases:**  
-  - Submit a test message and verify receipt/confirmation.  
-  - Check that all contact options are visible and functional.  
-  - Confirm form works on desktop and mobile.
+### Mobile Wireframes
 
-#### Visitor
-
-- **User Story:**  
-  I want a straightforward way to reach the band with questions or messages.
-
-- **Acceptance Criteria:**  
-  - Contact form is visible and easy to fill out.  
-  - Alternative contact methods (email, social media) displayed.
-
-- **Test Cases:**  
-  - Submit form with valid data and confirm submission success.  
-  - Verify alternative contact info is visible and correct.
-
-#### Fan
-
-- **User Story:**  
-  I want reassurance that my message was received after contacting the band.
-
-- **Acceptance Criteria:**  
-  - Confirmation message or thank-you page appears after form submission.
-
-- **Test Cases:**  
-  - Submit form and verify confirmation feedback displays.
-
-#### Event Organizer
-
-- **User Story:**  
-  I want to contact the band quickly to book a performance.
-
-- **Acceptance Criteria:**  
-- **Test Cases:**  
-  - Confirm booking fields (like event date, location) exist if applicable.  
-  - Test form submission includes booking info.
-
-#### Developer
-- **User Story:**  
-  I want to ensure form validation and error handling work correctly.
-
-- **Acceptance Criteria:**  
-  - Form validates required fields before submission.  
-  - Clear error messages appear for invalid inputs.
-
-- **Test Cases:**  
-  - Attempt to submit empty form and verify errors.  
-  - Try invalid inputs (e.g., invalid email) and check error prompts.
+- [About Us Mobile Wireframe](docs/wireframes/about-us-mobile.png)
+- [Gallery Mobile Wireframe](docs/wireframes/gallery-mobile.png)
+- [Contact Mobile Wireframe](docs/wireframes/contact-mobile.png)
+- [Feedback Mobile Wireframe](docs/wireframes/feedback-mobile.png)
 
 ---
 
-### Feedback Page
+## 5. Color Scheme
 
-#### Band Member (Owner)
+When designing the color scheme, I wanted to create a bold, punk-inspired appearance that reflects the band's energetic and rebellious spirit. For this reason, I selected a palette of deep blacks, bright whites, and striking reds to deliver maximum contrast and visual impact. I used the following color grid, created on https://contrast-grid.eightshapes.com/, to check contrast scores and ensure all text remains highly visible and the site is accessible to everyone. This approach guarantees that the design is not only visually powerful but also meets accessibility standards.
 
-- **User Story:**  
-  As a member of Škola Bend, I want users to see a clear confirmation that their message was sent successfully, so they know we received their contact form submission.
+![Colour Palette Reference](docs/colour-palette.png)
 
-- **Acceptance Criteria:**  
-  - The page displays a clear confirmation or thank-you message after the contact form is submitted.  
-  - There is a visible button or link to return to the contact page or main site.  
-  - No feedback form or comment fields are present.
+- **Background:** Black (`#000`)
+- **Primary Text:** White (`#fff`)
+- **Accent Color:** Red (`#ff0000`)
+- **UI Elements:** Charcoal (`#222`)
+- **Hover States:** Inverted to white with underlines for clear feedback
 
-- **Test Cases:**  
-  - Submit the contact form and verify the confirmation message appears.  
-  - Check that the "Go Back" button or link works as intended.
-
-#### Visitor
-
-- **User Story:**  
-  I want to know that my message to the band was sent successfully, so I feel confident my inquiry was received.
-
-- **Acceptance Criteria:**  
-  - A confirmation or thank-you message is shown after submitting the contact form.  
-  - There is a clear way to return to the contact page or main site.
-
-- **Test Cases:**  
-  - Submit the contact form and verify the confirmation message appears.  
-  - Click the "Go Back" button or link and confirm it works.
-
-#### Developer
-
-- **User Story:**  
-  I want the feedback confirmation page to be simple, accessible, and free of unnecessary forms or fields.
-
-- **Acceptance Criteria:**  
-  - Page contains only a confirmation message and navigation option.  
-  - No feedback/comment form is present.  
-  - Page is accessible and works on all devices.
-
-- **Test Cases:**  
-  - Inspect the page to confirm only confirmation content is present.  
-  - Test accessibility and navigation on desktop and mobile.
+The overall color scheme delivers a gritty, high-contrast punk aesthetic while maintaining excellent readability and accessibility.
 
 ---
 
-## Wireframes
+## 6. Technologies Used
 
-Below are the Balsamiq wireframes for both desktop and mobile versions of each page. These wireframes were created during the planning phase to visualize the layout, navigation, and user flow before development began. Each wireframe demonstrates the intended structure and accessibility considerations for both large and small screens.
+### Core Technologies
+- **HTML5:** Semantic markup structure  
+- **CSS3:** Custom styles and responsive design  
+- **Bootstrap 5.3.3:** Layout, grid, and component framework  
+- **Font Awesome 6:** Icon library for UI and social elements  
 
-### Home (About Us)
+### Development Tools
+- **Visual Studio Code:** Code editor with productivity extensions  
+- **Git & GitHub:** Version control and collaboration platform  
+- **Live Server (VS Code Extension):** Live preview and hot reload  
+- **Git Bash / Terminal:** Command-line interface for Git  
 
-**Desktop Version:**
+### Design & UI Tools
+- **Balsamiq Wireframes:** Visual wireframe creation for layout planning  
+- **Google Fonts:** Web-optimized typography (SpecialElite font)  
+- **Font Awesome:** Scalable vector icons  
+- **Favicon Generator:** Custom favicon creation  
 
-![About Us Desktop Wireframe](assets/images/wireframes/about-us-desktop.png)
+### Testing & Validation Tools
+- **W3C Markup Validator:** HTML compliance checking  
+- **W3C CSS Validator:** CSS validation and error checking  
+- **Google Lighthouse:** Performance, accessibility, best practices, and SEO audits  
 
-- Features a bold hero section introducing the band.
-- Includes navigation bar, main content area with band story, and footer with social links.
-- Layout emphasizes readability and visual hierarchy.
-
-**Mobile Version:**
-
-![About Us Mobile Wireframe](assets/images/wireframes/about-us-mobile.png)
-
-- Stacked layout for easy scrolling.
-- Mobile navigation (hamburger menu) and simplified content blocks.
-
-### Gallery
-
-**Desktop Version:**
-
-![Gallery Desktop Wireframe](assets/images/wireframes/gallery-desktop.png)
-
-- Grid layout for image thumbnails.
-- Clickable images open larger views.
-- Navigation and footer consistent with other pages.
-
-**Mobile Version:**
-
-![Gallery Mobile Wireframe](assets/images/wireframes/gallery-mobile.png)
-
-- Single-column image list for easy thumb navigation.
-- Responsive images and touch-friendly design.
-
-### Contact
-
-**Desktop Version:**
-
-![Contact Desktop Wireframe](assets/images/wireframes/contact-desktop.png)
-
-- Prominent contact form with labeled fields.
-- Alternative contact info (email, social links) visible.
-- Clear call-to-action button.
-
-**Mobile Version:**
-
-![Contact Mobile Wireframe](assets/images/wireframes/contact-mobile.png)
-
-- Form fields stacked vertically for mobile usability.
-- Large, accessible buttons and input areas.
-
-### Feedback
-
-**Desktop Version:**
-
-![Feedback Desktop Wireframe](assets/images/wireframes/feedback-desktop.png)
-
-- Simple feedback form with message area and submit button.
-- Confirmation message area for user feedback.
-
-**Mobile Version:**
-
-![Feedback Mobile Wireframe](assets/images/wireframes/feedback-mobile.png)
-
-- Streamlined form for quick feedback submission on mobile devices.
-- All elements sized for touch interaction.
+### Image Optimization Tools
+- **RedKetchup.io:** Image compression  
+- **TinyPNG:** Lossless PNG and JPEG compression  
+- **Cloudinary PNG to WebP Converter:** Format optimization  
+- **FreeConvert:** Quick online image conversion  
 
 ---
 
-## Screenshots
+## 7. Current Features (Common to All Pages)
 
-Below are screenshots of the real, finished site on both desktop and mobile devices for each main page. These images demonstrate the final implementation, responsive design, and visual consistency across different screen sizes.
+### Header Element
 
-### Home (About Us)
-
-**Lighthouse Scores:**
-- Performance: 89
-- Accessibility: 93
-- Best Practices: 78
-- SEO: 91
-
-![Lighthouse Report – Home (About Us)](assets/images/lighthouse/index.png)
-
-**Desktop – Navbar:**
-
-![About Us Desktop Navbar](assets/images/pages/about-us-desktop-navbar.png)
-
-**Desktop – Footer:**
-
-![About Us Desktop Footer](assets/images/pages/about-us-desktop-footer.png)
-
-**Mobile:**
-
-![About Us Mobile](assets/images/pages/about-us-mobile.png)
-
-**Mobile – Dropdown Menu:**
-
-![About Us Mobile Dropdown](assets/images/pages/about-us-mobile-dropdown.png)
-
-### Gallery
-
-**Lighthouse Scores:**
-- Performance: 100
-- Accessibility: 92
-- Best Practices: 100
-- SEO: 91
-
-![Lighthouse Report – Gallery](assets/images/lighthouse/gallery.png)
-
-**Desktop – Navbar:**
-
-![Gallery Desktop Navbar](assets/images/pages/gallery-desktop-navbar.png)
-
-**Desktop – Footer:**
-
-![Gallery Desktop Footer](assets/images/pages/gallery-desktop-footer.png)
-
-**Mobile – Footer:**
-
-![Gallery Mobile Footer](assets/images/pages/gallery-mobile-footer.png)
-
-**Mobile – Hovered Navbar:**
-
-![Gallery Mobile Hovered Navbar](assets/images/pages/gallery-mobile-hovered-over-navbar.png)
-
-### Contact
-
-**Lighthouse Scores:**
-- Performance: 93
-- Accessibility: 94
-- Best Practices: 100
-- SEO: 91
-
-![Lighthouse Report – Contact](assets/images/lighthouse/contact.png)
-
-**Desktop:**
-
-![Contact Desktop](assets/images/pages/contact-desktop.png)
-
-**Mobile:**
-
-![Contact Mobile](assets/images/pages/contact-mobile.png)
-
-### Feedback
-
-**Lighthouse Scores:**
-- Performance: 93
-- Accessibility: 93
-- Best Practices: 100
-- SEO: 91
-
-![Lighthouse Report – Feedback](assets/images/lighthouse/feedback.png)
-
-**Desktop:**
-
-![Feedback Desktop](assets/images/pages/feedback-desktop.png)
-
-**Mobile:**
-
-![Feedback Mobile](assets/images/pages/feedback-mobile.png)
+#### Title
+- The navigation bar displays the band's custom logo image as the primary brand identifier across all pages.
+- The logo visually represents the band's name and identity, ensuring instant brand recognition. 
 
 ---
 
-## Design & Styling Details
+### Navigation Bar
+
+- **Desktop Navigation:**  
+  Horizontal menu bar with clear section labels (`About`, `Gallery`, `Contact`)  
+
+- **Mobile Navigation:**  
+  Collapsible hamburger menu for optimal mobile experience  
+
+- **Active States:**  
+  Current page highlighted in **white** with underline and a red border for clear, high-contrast navigation feedback
+  
+- **Hover States:**  
+  Clickable navigation links turn **red** and are underlined when hovered over for strong visual feedback
+
+- **Accessibility:**  
+  Fully keyboard-navigable with visible focus indicators  
+
+- **Styling:**  
+  Dark charcoal background (`#222`) with white text, consistent across all pages  
+
+---
+
+### Anchor Tags (Within All Pages Main Content)
+
+- **Smooth Scrolling:** Implemented for internal page navigation  
+- **Accessibility:** All links include descriptive text, proper focus states, and use `aria-label` for social/external links. Navigation links use `aria-current="page"` for the active page, and `tabindex="-1"`/`aria-disabled="true"` for the current/disabled nav link.  
+- **Visual Feedback:** Red hover states and underlines provide clear interaction cues  
+- **External Links:** Open in a new tab with `target="_blank"` and use `aria-label` for clarity. (Note: `rel` attributes are recommended for security, but not currently present. See [Future Enhancements](#9-future-enhancements).)
+
+---
+
+### Footer
+
+- **Consistent Design:** Matches navigation bar with a dark charcoal background  
+- **Social Media Links:** Font Awesome icons for Instagram, YouTube, and other platforms  
+- **Accessibility:** Includes ARIA labels and screen reader support  
+- **Responsive Layout:** Right-aligned on desktop, centered on mobile devices  
+- **Interactive States:** Red hover effects on social icons for visual feedback  
+
+---
 
 ### Typography
 
-- The site uses the **SpecialElite** font as the primary typeface, imported via a custom `@font-face` rule from a local `.woff` font file.  
-  This vintage typewriter-style font reflects the band’s alternative, punk-inspired aesthetic.
-- For body text, the font stack falls back to a clean sans-serif font for readability and accessibility.
-- Headings (`h2`) use SpecialElite with letter spacing (`2px`) to emphasize the edgy, handcrafted feel.
-- Paragraphs are set with a comfortable font size (`1.1rem`) and line height (`1.6`) for easy reading.
+- **Primary Font:** `SpecialElite` — a vintage, typewriter-style font reflecting the punk aesthetic  
+- **Font Loading:** Self-hosted via `@font-face` for optimal performance and reliability  
+- **Fallback Fonts:** Clean sans-serif stack for accessibility and broad compatibility  
 
-### Colour Scheme
+#### Hierarchy
 
-- The overall background is **black (#000)** to create a dark, moody atmosphere fitting for an alternative rock band.
-- Text is primarily **white (#fff)** for high contrast and legibility.
-- Links and interactive elements use a bold **red (#ff0000)** accent color to convey passion and energy.
-- On hover/focus states, link colors invert to white with underlines to improve user feedback.
-- The navbar and footer backgrounds are a **dark charcoal (#222)** for subtle contrast with the page background while maintaining the dark theme.
-
-### Layout & Structure
-
-- The site layout uses flexible containers (`.container`, `.container-fluid`) with responsive widths and padding to center content on all screen sizes.
-- The body is a flex column with `min-height: 100vh` to enable a sticky footer that stays at the bottom on short pages.
-- Text is often centered for emphasis on the homepage/about section and contact form.
-
-### Components
-
-- **Navbar:**  
-  - Background is charcoal black with white text in SpecialElite font.  
-  - Active navigation links are highlighted in red with underline.  
-  - Hamburger toggle icon is custom white for visibility on dark background.
-- **Footer:**  
-  - Dark background matching navbar with white text and right-aligned content on desktop, centered on mobile.  
-  - Social media icons are white with red hover/focus states and visible outlines for accessibility.
-- **Buttons:**  
-  - Bold red backgrounds with white text, rounded corners, and letter spacing for a punk vibe.  
-  - On hover, buttons darken to a deeper red for interaction feedback.
-
-### Contact Form
-
-- The contact section features a striking black and red gradient background with subtle box shadows for depth.
-- Input fields have dark backgrounds with white text and red focus outlines.
-- Submit buttons are styled consistently with other buttons but also have a bold border and shadow for prominence.
-- The contact form background uses a repeating diagonal red stripe pattern over black with subtle white noise overlays for a gritty punk texture.
-
-### Accessibility
-
-- Focus-visible outlines are custom red or white, highly visible for keyboard users.
-- Reduced motion media query disables transitions and animations for users who prefer minimal movement.
+- **Headings:** Most headings use the `SpecialElite` font, but not all have `2px` letter spacing for emphasis. Some headings use additional Bootstrap classes for size/weight, so appearance may vary slightly between pages.
+- **Body Text:** `1.1rem` font size with `1.6` line height and `SpecialElite` font for comfortable reading, consistent across all pages.
+- **Navigation:** Uses `SpecialElite` for brand consistency throughout the site.
 
 ---
 
-*This design system supports the band’s edgy, punk-inspired identity while ensuring accessibility, usability, and responsive performance across devices.*
+## 8. Individual Page Content Features
 
-## Accessibility Considerations
+### About Page Content
 
-- Use semantic HTML elements such as `<nav>`, `<main>`, `<footer>`, etc., to provide meaningful page structure.
-- Include ARIA roles and labels (e.g., `aria-label`, `aria-labelledby`, `aria-expanded`, `aria-controls`) to improve screen reader support.
-- Ensure high contrast color schemes and visible focus outlines for better visibility and keyboard navigation.
-- Use accessible form labels paired with inputs and visible placeholders where appropriate.
-- Implement a “Skip to main content” link for keyboard users to bypass repetitive navigation.
-- Use screen-reader-only text with a `.visually-hidden` class to provide additional context without cluttering the visual interface.
-- Ensure interactive elements like buttons and links have descriptive labels and states.
-- Use responsive and accessible embedded media with meaningful `title` attributes on iframes or videos.
-- Provide accessible social media links with proper `aria-label`s and visually hidden text for screen readers.
-
-## Features
-
-- Responsive design using Bootstrap 5
-- Semantic HTML5 structure for accessibility
-- Sticky footer on all pages
-- Image gallery with uniform aspect ratio and high-DPI support (WebP images)
-- Contact form with visible placeholders and accessible labels
-- Social media links with accessible Font Awesome icons
-- Consistent navigation and footer across all pages
-- Visually hidden text for screen readers
-
-## Additional Features
-
-- Keyboard-accessible navigation through Bootstrap ensuring usability for all users.
-- Optimized images to enhance load times and overall performance.
-- SEO-friendly meta tags to improve search engine visibility.
-- Contact form with built-in validation and clear error handling for better user feedback.
-
-## Technologies Used
-
-- HTML5 (semantic markup)
-- CSS3 (custom styles)
-- [Bootstrap 5.3.3](https://getbootstrap.com/) (CSS framework for layout, grid, and components)
-- [Font Awesome 6](https://fontawesome.com/) (icon library for social icons)
-- WebP images for gallery and band photos
-- [Google Fonts: Special Elite](https://fonts.google.com/specimen/Special+Elite) (band branding font, self-hosted)
-- No custom JavaScript (all interactivity handled by Bootstrap's JS via CDN)
+- **Band Story:** Comprehensive narrative about Škola Bend's formation and musical journey  
+- **Member Profiles:** Introduction to band members  
+- **Achievements:** Highlight currently including debut single *"Ova Pjesma"*  
+- **Musical Style:** Description of their alternative rock/punk sound  
+- **Page Screenshots:** [Desktop Navbar](docs/pages/about-us-desktop-navbar.png), [Desktop Footer](docs/pages/about-us-desktop-footer.png) | [Mobile](docs/pages/about-us-mobile.png), [Mobile Dropdown](docs/pages/about-us-mobile-dropdown.png)
 
 ---
 
-### Development Tools
+### Gallery Page Content
 
-- **Visual Studio Code:** Primary code editor, with extensions to boost productivity and streamline development workflows.
-- **Git & GitHub:** Version control and collaborative platform to manage codebase and track changes.
-- **Live Server (VS Code extension):** Provided instant preview and live reload during development for faster iteration.
-- **Git Bash / Terminal:** Command-line interface used for running Git commands and managing project files efficiently.
-
-### Design & UI Tools
-
-- **Balsamiq Wireframes:** Employed for early-stage planning and visualizing website layout and user flow through low-fidelity mockups.
-- **Google Fonts:** Integrated custom, web-optimized fonts to improve typography aesthetics and readability.
-- **Font Awesome:** Added scalable vector icons to enrich UI elements such as social media buttons, ensuring visual consistency.
-- **Favicon Generator:** Created and implemented a custom favicon to enhance brand identity and browser tab visibility.
-
-### Testing & Validation Tools
-
-- **W3C Markup Validator:** Verified HTML markup compliance with web standards to ensure cross-browser compatibility and accessibility.
-- **W3C CSS Validator:** Checked CSS code quality, adherence to standards, and detected potential styling issues early.
-- **Google Lighthouse:** Audited site performance, accessibility, best practices, and SEO. Used both text scores and full report screenshots for documentation and continuous improvement.
-
-> **Overall Lighthouse Audit:**
-> - Performance: 73
-> - Accessibility: 93
-> - Best Practices: 78
-> - SEO: 91
->
-> ![Overall Lighthouse Report](assets/images/lighthouse/overall.png)
-
-### Additional Tools
-
-- **ChatGPT:** Assisted with code suggestions, content refinement, and accessibility improvements.
-- **Grammarly:** Proofread and enhanced written content for clarity, grammar, and tone.
-- **RedKetchup.io:** Optimized and compressed images to improve load times without sacrificing quality.
-- **TinyPNG:** Compress PNG and JPEG images with minimal quality loss.
-- **Cloudinary PNG to WebP Converter:** Convert PNG images to webp format for better performance.
-- **Red Ketchup Image Resizer:** Resize and compress images efficiently.
-- **FreeConvert PNG to WebP:** Quick online conversion tool for PNG to webp.
-- **ImageResizer:** Download and resize images with ease.
+- **Performance Photos:** High-quality images from live shows and events  
+- **Image Optimization:** WebP format for fast loading and image clarity  
+- **Responsive Grid:** Uniform layout with consistent aspect ratio that adapts to screen size  
+- **Click-to-Enlarge:** Clicking a gallery image opens the full-size version in a new browser tab for closer viewing  
+- **Event Context:** Captions and brief descriptions of performances for each image  
+- **Page Screenshots:** [Desktop Navbar](docs/pages/gallery-desktop-navbar.png), [Desktop Footer](docs/pages/gallery-desktop-footer.png) | [Mobile](docs/pages/gallery-mobile.png), [Mobile Footer](docs/pages/gallery-mobile-footer.png), [Mobile Hovered Navbar](docs/pages/gallery-mobile-hovered-over-navbar.png)
 
 ---
 
-## Deployment
+### Contact Page Content
 
-### Setting up the Repository
+- **Contact Form:** Accessible form with labeled fields and client-side validation  
+- **Form Fields:** Name, email, and message  
+- **Visual Design:** Red and black punk-inspired gradient background  
+- **Alternative Contact:** Email address and social media links for additional contact options  
+- **Booking Information:** Prominent call-to-action for event inquiries and gig bookings  
+- **Page Screenshots:** [Desktop](docs/pages/contact-desktop.png) | [Mobile](docs/pages/contact-mobile.png)
 
-- Use the Code Institute template to create your GitHub repo.
-- Clone the repo locally using VS Code or the command line.
+---
 
-### Manual Deployment (Command Line)
+### Form Feedback Page Content
 
+- **Confirmation Message:** Clear success message after form submission  
+- **Thank You Note:** Personalized message expressing appreciation  
+- **Navigation Options:** Easy access back to the homepage or other sections  
+- **Consistent Styling:** Matches overall site theme with accessibility standards  
+- **User Assurance:** Confirms message was successfully received by the band  
+- **Page Screenshots:** [Desktop](docs/pages/feedback-desktop.png) | [Mobile](docs/pages/feedback-mobile.png)
+
+---
+
+## 9. Future Enhancements
+
+- **Audio Player Integration:** Allow users to listen to Škola Bend's music directly on the site  
+- **Blog/News Section:** For band updates, announcements, and behind-the-scenes content  
+- **Event Calendar:** Dynamic calendar displaying upcoming shows, gigs, and ticket links  
+- **Merchandise Store:** E-commerce functionality to sell shirts, posters, and band memorabilia  
+- **Multilingual Support:** Language toggle (Croatian and English) for wider accessibility  
+- **Enhanced Contact Form:** Backend integration for real-time email delivery  
+- **Social Media Integration:** Embed live social media feeds (e.g., Instagram, Facebook)  
+- **Newsletter Signup:** Subscription feature for fan updates and exclusive content  
+- **Advanced Gallery Features:** Filterable categories, slideshows, and full-screen views  
+- **Add rel attributes to external links:** For improved security and best practices, add `rel="noopener noreferrer"` to all external links that use `target="_blank"`.
+
+---
+
+## 10. Testing Phase
+
+For all general bugs, fixes, and detailed results—including Lighthouse scores, WAVE evaluation tool results, and W3C markup validation—please refer to [TESTING.md](TESTING.md).
+
+---
+
+## 11. Deployment
+
+### Deployment Process
+
+#### Setting up the Repository
+1. Use the Code Institute template to create a new GitHub repository  
+2. Clone the repository locally via VS Code or terminal  
+
+#### Manual Deployment via Command Line
 ```bash
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO.git
-git push -u origin main
+git init  
+git add .  
+git commit -m "Initial commit"  
+git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO.git  
+git push -u origin main  
+
 ```
 
-## Publishing with GitHub Pages
+#### Publishing with GitHub Pages
 
-1. Go to your GitHub repository **Settings**.
-2. Select **Pages** from the sidebar.
-3. Choose the branch you want to deploy (typically `main`).
-4. Click **Save** and wait for the live URL to be generated.
+To deploy the project using **GitHub Pages**:
 
----
-
-## Stretch Goals & Future Enhancements
-
-- **Audio Player Integration:** Embed an audio player to allow visitors to listen to the band’s songs directly on the site, enhancing user engagement.
-- **Blog / News Section:** Add a dedicated area for news, announcements, and band updates to keep fans informed about recent activities and releases.
-- **Event Calendar:** Implement a dynamic calendar showcasing upcoming shows, tours, and events, with links for ticket purchases or RSVPs to improve fan experience and increase attendance.
-- **Merchandise Store:** Develop an online shop to sell band merchandise such as t-shirts, posters, vinyl, and other memorabilia, providing an additional revenue stream and fan engagement.
-- **Multilingual Support:** Introduce language options (Croatian and English) to cater to a broader audience and international fans.
-- **Enhanced Contact Form:** Upgrade the current contact form (currently a mockup) to a fully functional form that can send messages directly to the band’s email. This could include features like file uploads for fan submissions or press inquiries.
-- **Social Media Integration:** Add live social media feeds or embed posts to showcase the band’s latest interactions and promote fan community engagement.
-- **Newsletter Signup:** Implement a subscription feature to collect fan emails and send updates, exclusive content, or event reminders.
-- **Accessibility Improvements:** Continue refining accessibility features to ensure an inclusive experience for all users, including keyboard navigation, screen reader support, and adjustable contrast settings.
+1. Go to your **GitHub repository**.
+2. Navigate to **Settings**.
+3. In the left-hand sidebar, select **Pages**.
+4. Under **Source**, choose the branch to deploy (typically `main`).
+5. Click **Save**.
+6. Wait for GitHub to generate a live URL for the site.
 
 ---
 
-## Bugs & Fixes
+## 12. Credits
 
-- **Font Choice & Special Characters:**
-  Initially, I used the FrederickSans font from dafont.com because it matched the band’s logo style. However, this font was very slim and all uppercase, making text hard to read. More importantly, it didn’t support special characters properly — for example, the band’s name includes the character &Scaron;, which displayed correctly in their logo but not on the website using this font. To fix this, I switched to a punk/edgy Google Font that fully supports special characters, offers better readability, and fits the band’s rock aesthetic.
-- **FontAwesome Icon Display Issue:**
-  When adding FontAwesome icons to the social media links in the footer, the entire socials section failed to display. Despite careful review and consulting multiple resources, the root cause was unclear. As a temporary solution, I used PNG images of the icons, but resizing those caused image distortion and crashes. After further adjustments to the code and styles, I successfully reintroduced the FontAwesome icons, which resolved the issue.
-- **Gallery Image Sizes and Quality:**
-  Some gallery images had inconsistent heights, causing a visually uneven layout. Attempts to resize them uniformly led to pixelation and quality loss. After consulting with a mentor, I implemented thumbnail images linked to full-size versions, optimized and compressed using WebP format to maintain quality while improving load times and compatibility across browsers.
-- **Contact Form Functionality:**
-  The contact page originally included a Formspree integration to send messages to an email address. However, submitting the form redirected users away from the site to the Formspree feedback page, which disrupted the user experience. Opening the form in a new tab caused the “Go Back” button on the Formspree page to malfunction because there was no browsing history in the new tab. To address this, I replaced the form with a mockup version that does not send data externally but navigates users to a custom feedback page within the site. This mockup is for demonstration purposes; the form can be connected to an email service if the band chooses to use the site live.
+### Honorable Mentions
+- **Škola Bend** — For their inspiration, feedback, and the opportunity to build their digital presence.
+- **Code Institute** — For the template and educational foundation.
+- **Open Source Community** — Behind tools like Bootstrap, Font Awesome, and Google Fonts.
 
----
-
-## Additional Notes
-
-- **Browser Autofill Font Note:**
-  When hovering over browser autofill suggestions (e.g., in Chrome), the font in the input field may temporarily appear as the browser's default font. However, once an autofill option is selected (clicked), the field displays using the site's custom font as intended. This is a browser UI behavior and does not affect the final appearance of autofilled text.
-  
-- **Contact Form Mockup Note:**
-  The current contact form on the site is a static mockup; submitting messages does not trigger any email or backend process. It can be connected to an actual email service or backend form handler if required for real message delivery.
-
-- **Code Institute Template Files Note:**
-  At the beginning of the project, I used the Code Institute template, which resulted in extra files (such as `.gitpod.dockerfile`, `.gitpod.yml`, and `.vscode`) being present on GitHub that were not used in the project. These files do not appear in my VS Code (they seem to be hidden), so I am unable to delete them directly. In future projects, I will use a `.gitignore` file to exclude any unused template files if I start from a similar template.
-
-- **YouTube Embed Performance Note:**
-  The embedded YouTube video on the homepage uses a standard iframe, which can impact page performance and Lighthouse scores due to third-party scripts and resources loading immediately. Pure CSS cannot be used to lazy-load or defer YouTube iframes—this requires JavaScript to swap in the iframe after user interaction. In the future, a JavaScript-based lazy-loading solution can be implemented to improve performance and reduce third-party impact, but for now, the standard embed is used for maximum compatibility and to avoid custom JavaScript.
-
----
-
-## Credits
-
-### Code & Text Content
-
-- Sara Jelic — Development, content writing, and design.
-- ChatGPT — Assistance with professional writing of text.
+### General Reference
+- **ChatGPT** — Help with code suggestions, content refinement, and accessibility improvements. ([ChatGPT](https://chatgpt.com/))
+- **MDN Web Docs** — Best practices and references for HTML, CSS, and web development. ([MDN](https://developer.mozilla.org/en-US/))
+- **Bootstrap Documentation** — Implementation guidance and customization support. ([Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/))
+- **W3C Guidelines** — Semantic markup and accessibility standards. ([W3C](https://www.w3schools.com/))
+- **Grammarly** — Proofreading and refining tone and clarity. ([Grammarly](https://www.grammarly.com/))
 
 ### Media
+- **Škola Bend** — Band photos, logos, and video. ([Škola Instagram](https://www.instagram.com/skola_bend/))
+- **Event Photographers** — Live performance and concert images.
+- **Font Awesome** — Social media icons and UI graphics. ([Font Awesome](https://fontawesome.com/))
+- **Google Fonts** — SpecialElite typography for consistent branding. ([Google Fonts](https://fonts.google.com/))
+- **Balsamiq Wireframes** — Wireframe images for planning and documentation. ([Balsamiq](https://balsamiq.com/))
+- **Favicon Generator** — Custom favicon for the website. ([favicon.io](https://favicon.io/))
 
-- Škola Bend — Band photos and logos.
-- Event photographers — Live performance images.
-
-### Acknowledgments
-
-- Thanks to the band members for their inspiration and feedback.
-- Open-source communities behind Bootstrap, Font Awesome, and Google Fonts.
-
-## License
-
-<!-- State the license type and link to the LICENSE file. -->
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+### Tools & Online Resources
+- **Am I Responsive?** — Device preview tool ([ami.responsive](https://ui.dev/amiresponsive))
+- **Contrast Grid** — Color contrast checker ([Contrast Grid](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23000%20(black)%0D%0A%23fff%20%2F%20%23ffffff%20(white)%0D%0A%23ff0000%20(red)%0D%0A%23222%20(dark%20gray)%0D%0A%23b20000%20(dark%20red)%0D%0A%23111%20(very%20dark%20gray)%0D%0ACSS%20Color%20Keywords%3A%0D%0A%0D%0Atransparent%0D%0ARGBA%20Colors%3A%0D%0A%0D%0Argba(255%2C0%2C0%2C0.15)%20(semi-transparent%20red)%0D%0Argba(255%2C255%2C255%2C1)%20(white%2C%20used%20in%20SVG)%0D%0Argba(0%2C0%2C0%2C0.15)%20(semi-transparent%20black)%0D%0Argba(0%2C0%2C0%2C0.18)%20(semi-transparent%20black)%0D%0Argba(0%2C0%2C0%2C0.55)%20(semi-transparent%20black)%0D%0Argba(0%2C0%2C0%2C0.22)%20(semi-transparent%20black)&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp))
+- **W3C Markup Validator** — HTML validation ([W3C Validator](https://validator.w3.org/#validate_by_input+with_options))
+- **WAVE Evaluation Tool** — Accessibility testing ([WAVE Chrome Extension](https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh))
+- **Lighthouse** — Performance, accessibility, and SEO audits ([Lighthouse Overview](https://developer.chrome.com/docs/lighthouse/overview))
 
 ---
+
+## 13. License
+
+This project is licensed under the **MIT License**.  
+See the [LICENSE](LICENSE) file for full details.
