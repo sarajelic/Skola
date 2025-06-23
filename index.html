@@ -7,8 +7,9 @@
   <title>&Scaron;kola Bend</title>
   <meta name="description" content="&Scaron;kola Bend is an energetic alternative rock/punk band from Zagreb, Croatia. Explore the band&rsquo;s story, enjoy a gallery of live performances, and get in touch through a modern, accessible website.">
 
-  <!-- Bootstrap CSS for responsive layout and UI components -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS for responsive layout and UI components (non-blocking) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"></noscript>
 
   <!-- Custom CSS for site-specific styles -->
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -16,11 +17,14 @@
   <!-- Favicon Icon -->
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 
-  <!-- Font Awesome for social media icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- Font Awesome for social media icons (non-blocking) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"></noscript>
 
   <!-- Preload Logo Image to Improve LCP -->
   <link rel="preload" as="image" href="assets/images/skolalogo.webp">
+  <!-- Preload YouTube Preview Image to Improve LCP -->
+  <link rel="preload" as="image" href="https://img.youtube.com/vi/IQv1fsfXkFI/hqdefault.jpg">
 </head>
 <body>
   <div class="content-wrapper">
@@ -43,7 +47,7 @@
         <!-- Collapsible Navigation Links -->
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" tabindex="-1" aria-disabled="true">About</a></li>
             <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
@@ -76,7 +80,7 @@
             <section>
               <!-- Lazy-loaded YouTube video of the band's first release -->
               <div class="youtube-lazy ratio ratio-16x9 my-3 mx-auto d-block" data-youtube-id="IQv1fsfXkFI" aria-label="YouTube video player" role="button" tabindex="0">
-                <img src="https://img.youtube.com/vi/IQv1fsfXkFI/hqdefault.jpg" alt="YouTube video preview: Škola Bend - First Release" loading="lazy">
+                <img src="https://img.youtube.com/vi/IQv1fsfXkFI/hqdefault.jpg" alt="YouTube video preview: Škola Bend - First Release">
                 <button type="button" aria-label="Play video">
                   <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.85a8 8 0 0 0-5.6-5.66C57.12 0.67 34 0.67 34 0.67s-23.12 0-26.92 1.52a8 8 0 0 0-5.6 5.66A83.4 83.4 0 0 0 0 24a83.4 83.4 0 0 0 1.48 16.15 8 8 0 0 0 5.6 5.66C10.88 47.33 34 47.33 34 47.33s23.12 0 26.92-1.52a8 8 0 0 0 5.6-5.66A83.4 83.4 0 0 0 68 24a83.4 83.4 0 0 0-1.48-16.15z" fill="#212121" fill-opacity="0.8"/><path d="M45 24 27 14v20z" fill="#fff"/></svg>
                 </button>
