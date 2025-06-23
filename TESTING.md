@@ -51,6 +51,18 @@ Below is a summary of all major errors and warnings encountered during developme
 - **Description:** Lighthouse flagged that some images (e.g., the Škola logo) did not have explicit width and height attributes, which can cause layout shifts and affect Cumulative Layout Shift (CLS) scores.
 - **Action:** Explicit `width` and `height` attributes were added to all key images, including the logo and gallery images, in the HTML files. This ensures layout stability and optimal CLS. (See `index.html`, `gallery.html`, and other HTML files)
 
+### 10. Reduce unused JavaScript (YouTube embed)
+- **Status:** Unfixable (third-party)
+- **Description:** Lighthouse flags a large amount of unused JavaScript loaded by the embedded YouTube video (base.js, www-embed-player-pc.js, etc.), with potential savings of ~700 KiB.
+- **Reason:** These scripts are required by YouTube for the video player to function and are loaded automatically by the embed code. You cannot control or defer their loading from your codebase.
+- **How to Fix:** The only way to eliminate this warning is to remove the YouTube embed or use a static image placeholder that loads the video only on user interaction ("lite" YouTube embed). This has tradeoffs for user experience and accessibility. See README for discussion.
+
+### 11. Reduce unused CSS (YouTube embed, Bootstrap, Font Awesome)
+- **Status:** Unfixable (third-party/CDN)
+- **Description:** Lighthouse flags a large amount of unused CSS from the YouTube embed (www-player.css, embed_ui_css.css) and from Bootstrap/Font Awesome (CDN CSS), with potential savings of ~123 KiB.
+- **Reason:** YouTube loads its own CSS for the video player, which cannot be modified or purged. Bootstrap and Font Awesome are loaded from CDN and include many general-purpose styles not used on this site.
+- **How to Fix:** You cannot remove or defer unused CSS from third-party embeds or CDN libraries unless you self-host and customize them, or remove the YouTube embed. The current setup already uses non-blocking CSS loading for Bootstrap/Font Awesome, which is best practice for static sites.
+
 ---
 
 ## Lighthouse: Reduce unused CSS (Bootstrap, Font Awesome)

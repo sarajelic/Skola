@@ -56,15 +56,11 @@
 
       <!-- About Section -->
       <section id="about">
-        <div class="row mb-4">
-          <div class="col-12 text-center">
+        <article>
+          <div class="text-center mb-4">
             <h1 class="mb-3 h2">About Us</h1>
           </div>
-        </div>
-
-        <!-- Band Introduction -->
-        <article class="row mb-4">
-          <div class="col-12 text-center">
+          <div class="text-center mb-4">
             <p class="readable-text">
               &Scaron;kola is an alternative rock/punk band from Zagreb, blending raw energy with unapologetic noise and chaos.
               The lineup &mdash; Maksimilijan &#381;ivkovi&#263;, Roko Gradski, Davor Grabovac, Eva Gali&#263;, and Iva Gradski &mdash; delivers a sound that&rsquo;s loud, restless, and impossible to ignore.
@@ -74,20 +70,20 @@
         </article>
 
         <!-- Section Highlighting the First Music Release -->
-        <section aria-labelledby="first-release">
-          <div class="row justify-content-center text-center">
-            <div class="col-12 col-md-10 col-lg-8">
-              <h2 id="first-release">Check out our first release</h2>
-              <article>
-                <!-- Embedded YouTube video of the band's first release -->
-                <div class="ratio ratio-16x9 my-3 mx-auto d-block">
-                  <iframe src="https://www.youtube-nocookie.com/embed/IQv1fsfXkFI"
-                          title="YouTube video player" allowfullscreen></iframe>
-                </div>
-              </article>
-            </div>
+        <article aria-labelledby="first-release">
+          <div class="text-center">
+            <h2 id="first-release">Check out our first release</h2>
+            <section>
+              <!-- Lazy-loaded YouTube video of the band's first release -->
+              <div class="youtube-lazy ratio ratio-16x9 my-3 mx-auto d-block" data-youtube-id="IQv1fsfXkFI" aria-label="YouTube video player" role="button" tabindex="0">
+                <img src="https://img.youtube.com/vi/IQv1fsfXkFI/hqdefault.jpg" alt="YouTube video preview: Škola Bend - First Release" loading="lazy">
+                <button type="button" aria-label="Play video">
+                  <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.85a8 8 0 0 0-5.6-5.66C57.12 0.67 34 0.67 34 0.67s-23.12 0-26.92 1.52a8 8 0 0 0-5.6 5.66A83.4 83.4 0 0 0 0 24a83.4 83.4 0 0 0 1.48 16.15 8 8 0 0 0 5.6 5.66C10.88 47.33 34 47.33 34 47.33s23.12 0 26.92-1.52a8 8 0 0 0 5.6-5.66A83.4 83.4 0 0 0 68 24a83.4 83.4 0 0 0-1.48-16.15z" fill="#212121" fill-opacity="0.8"/><path d="M45 24 27 14v20z" fill="#fff"/></svg>
+                </button>
+              </div>
+            </section>
           </div>
-        </section>
+        </article>
       </section>
     </main>
   </div>
@@ -127,6 +123,35 @@
 
   <!-- Bootstrap Bundle with Popper (for interactive components like navbar toggles) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script>
+    // Lazy-load YouTube video on click
+    document.addEventListener('DOMContentLoaded', function() {
+      var lazy = document.querySelector('.youtube-lazy');
+      if (!lazy) return;
+      function loadVideo() {
+        if (lazy.dataset.loaded) return;
+        var id = lazy.getAttribute('data-youtube-id');
+        var iframe = document.createElement('iframe');
+        iframe.setAttribute('src', 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1');
+        iframe.setAttribute('title', 'YouTube video player');
+        iframe.setAttribute('allowfullscreen', '');
+        iframe.setAttribute('frameborder', '0');
+        iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        lazy.innerHTML = '';
+        lazy.appendChild(iframe);
+        lazy.dataset.loaded = 'true';
+      }
+      lazy.addEventListener('click', loadVideo);
+      lazy.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          loadVideo();
+        }
+      });
+    });
+  </script>
 </body>
 </html>
 
