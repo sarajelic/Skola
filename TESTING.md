@@ -80,6 +80,7 @@ All major errors and warnings encountered during development were documented and
 - Accessibility warnings addressed (color contrast, heading order, ARIA attributes, alt text, focus states).
 - Performance improved by optimizing images (WebP), lazy-loading non-critical assets, and preloading LCP images.
 - Best Practices and SEO warnings resolved (meta descriptions, link `href`/`aria-current`, favicon, etc.).
+- <strong>Note:</strong> If you see a "Serve static assets with an efficient cache policy" warning in Lighthouse, this is due to GitHub Pages' default cache settings (10 minutes TTL). This cannot be changed from the codebase. All images and assets are optimized for size and performance, and this warning does not impact real-world user experience.
 - Remaining warnings (if any) are due to third-party scripts (YouTube) or hosting limitations (GitHub Pages cache policy) and are documented below.
 
 #### Mobile Version

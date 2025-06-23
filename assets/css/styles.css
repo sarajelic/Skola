@@ -441,6 +441,11 @@ footer,
     display: block;
 }
 
+/* Explicit font-size for h1 inside #gallery to address browser deprecation warning */
+#gallery > h1 {
+  font-size: 2rem;
+}
+
 /* === 7. Utility/Helper Classes === */
 .text-white {
     color: #fff !important;
