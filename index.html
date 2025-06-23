@@ -59,10 +59,10 @@
     <main class="container py-5 flex-grow-1">
 
       <!-- About Section -->
-      <section id="about">
+      <section id="about" aria-labelledby="about-heading">
         <article>
           <div class="text-center mb-4">
-            <h1 class="mb-3 h2">About Us</h1>
+            <h1 id="about-heading" class="mb-3 h2">About Us</h1>
           </div>
           <div class="text-center mb-4">
             <p class="readable-text">
@@ -77,15 +77,15 @@
         <article aria-labelledby="first-release">
           <div class="text-center">
             <h2 id="first-release">Check out our first release</h2>
-            <section>
+            <div>
               <!-- Lazy-loaded YouTube video of the band's first release -->
-              <div class="youtube-lazy ratio ratio-16x9 my-3 mx-auto d-block" data-youtube-id="IQv1fsfXkFI" aria-label="YouTube video player" role="button" tabindex="0">
+              <div class="youtube-lazy ratio ratio-16x9 my-3 mx-auto d-block" data-youtube-id="IQv1fsfXkFI" tabindex="0">
                 <img src="https://img.youtube.com/vi/IQv1fsfXkFI/hqdefault.jpg" alt="YouTube video preview: Škola Bend - First Release">
                 <button type="button" aria-label="Play video">
                   <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.85a8 8 0 0 0-5.6-5.66C57.12 0.67 34 0.67 34 0.67s-23.12 0-26.92 1.52a8 8 0 0 0-5.6 5.66A83.4 83.4 0 0 0 0 24a83.4 83.4 0 0 0 1.48 16.15 8 8 0 0 0 5.6 5.66C10.88 47.33 34 47.33 34 47.33s23.12 0 26.92-1.52a8 8 0 0 0 5.6-5.66A83.4 83.4 0 0 0 68 24a83.4 83.4 0 0 0-1.48-16.15z" fill="#212121" fill-opacity="0.8"/><path d="M45 24 27 14v20z" fill="#fff"/></svg>
                 </button>
               </div>
-            </section>
+            </div>
           </div>
         </article>
       </section>

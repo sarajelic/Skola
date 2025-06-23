@@ -81,6 +81,46 @@ No action is needed. The site is already optimized for best-practice loading of 
 
 ---
 
+## HTML Validation Warnings and Explanations (index.html)
+
+### 1. Warning: Consider using the h1 element as a top-level heading only
+- **Excerpt:**
+  ```html
+  <h1 id="about-heading" class="mb-3 h2">About Us</h1>
+  ```
+- **Explanation:**
+  Only one `<h1>` is present on the page, used for the "About Us" heading. This is correct and best practice. The warning is informational and can be safely ignored, as the structure is accessible and semantically sound.
+
+### 2. Warning: Section lacks heading
+- **Excerpt:**
+  ```html
+  <section id="about" aria-labelledby="about-heading">
+  ```
+- **Explanation:**
+  The `<section id="about">` contains a heading (`<h1 id="about-heading">About Us</h1>`) and uses `aria-labelledby` to reference it. This is semantically correct and accessible. The warning is informational and does not require changes.
+
+### 3. Warning: Possible misuse of aria-label
+- **Excerpt (previously):**
+  ```html
+  <div class="youtube-lazy ..." aria-label="YouTube video player" ...>
+  ```
+- **Explanation:**
+  The `aria-label` was removed from the `.youtube-lazy` div to avoid misuse, as the button inside is the interactive element. The div now has no `aria-label`, resolving the warning.
+
+### 4. Error: The element button must not appear as a descendant of an element with the attribute role=button
+- **Excerpt (previously):**
+  ```html
+  <div class="youtube-lazy ..." role="button"> ... <button> ... </button> ... </div>
+  ```
+- **Explanation:**
+  The `role="button"` was removed from the `.youtube-lazy` div, so the button is not inside an element with `role=button`. This resolves the error and improves accessibility.
+
+---
+
+All warnings and errors above have been reviewed and addressed for accessibility and semantic correctness. No further action is needed unless new issues are reported.
+
+---
+
 **Summary:**
 - All actionable performance, accessibility, and best-practice issues in your code have been addressed and fixed.
 - The only remaining warnings are caused by third-party services (YouTube) or hosting limitations (GitHub Pages cache policy) and cannot be fixed from your codebase.
