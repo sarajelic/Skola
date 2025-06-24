@@ -290,13 +290,13 @@ The overall color scheme delivers a gritty, high-contrast punk aesthetic while m
 
 #### Accessibility Features & Known Limitations
 
-- **Semantic HTML:** All pages use semantic elements (e.g., <header>, <nav>, <main>, <article>, <section>, <footer>) for clear structure and improved accessibility.
+- **Semantic HTML:** All pages use semantic elements (e.g., header, nav, main, article, section, footer) for clear structure and improved accessibility.
 - **Keyboard Navigation:** All navigation, forms, and interactive elements are fully accessible via keyboard, with visible focus indicators.
 - **ARIA Attributes:** ARIA labels and roles are used where necessary to enhance screen reader support and clarify navigation or social links.
 - **Color Contrast:** High-contrast color scheme ensures readability for users with visual impairments.
 - **Alt Text:** All images include descriptive alt text for screen readers.
 - **Form Accessibility:** All form fields are properly labeled and accessible, with robust autofill CSS. Note: When browser autofill options are displayed (e.g., Chrome's dropdown), the font may temporarily revert to the browser default. Once an option is selected, the custom font is restored. This is a browser-level limitation.
-- **Heading Structure:** Each page uses a single <h1> and follows a logical heading order. Some headings are placed within <article> or <section> elements for semantic clarity; automated validators may still issue warnings, but these do not impact accessibility.
+- **Heading Structure:** Each page uses a single h1 tag and follows a logical heading order. Some headings are placed within article or section elements for semantic clarity; automated validators may still issue warnings, but these do not impact accessibility.
 - **Known Limitations:**
   - Some automated tools (e.g., W3C Validator, Lighthouse) may flag informational warnings about heading order or section headings due to the use of semantic elements. These are intentional for code clarity and do not affect user experience or accessibility.
   - External links open in a new tab for usability, but currently lack rel attributes for security (see Future Enhancements).
