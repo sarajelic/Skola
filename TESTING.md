@@ -37,7 +37,7 @@ All major errors and warnings encountered during development were documented and
 - **Gallery Image Consistency:**
   Fixed inconsistent image heights by using uniform thumbnails and full-size WebP images for better layout and load times.
 - **Contact Form User Experience:**
-  Replaced external Formspree with custom feedback page for seamless UX; current version functions as a demo.
+  The contact form was originally implemented using a third-party service (Formspree) and connected to my personal email for testing. When users clicked the send message button, they were redirected away from the site to the Formspree confirmation page, which disrupted the user experience. Attempting to open the confirmation in a new tab (to keep the original site open) caused the 'Go Back' button on the Formspree page to stop working, as it could not return to the previous tab. Since this behavior was controlled by the third-party service and could not be fixed from my end, I replaced the external website with a custom feedback page. This mockup feedback page provides a seamless, on-site confirmation experience for users, ensuring they remain on the website and receive immediate visual feedback that their message was sent.
 - **Redundant nav link vs. crawlability (WAVE vs. Lighthouse SEO):**
   Kept `href` on all nav links for SEO and accessibility, accepting the WAVE redundant link warning as informational.
 - **Contrast, navigation, and accessibility issues:**
@@ -78,8 +78,6 @@ All major errors and warnings encountered during development were documented and
 - Accessibility warnings addressed (color contrast, heading order, ARIA attributes, alt text, focus states).
 - Performance improved by optimizing images (WebP), lazy-loading non-critical assets, and preloading LCP images.
 - Best Practices and SEO warnings resolved (meta descriptions, link `href`/`aria-current`, favicon, etc.): All pages now include unique and descriptive meta descriptions, a favicon, and correct use of `href` and `aria-current` attributes on navigation links. External CSS and icon libraries are loaded non-blocking for performance. All links are crawlable for SEO, and redundant or missing attributes have been addressed to meet best practices.
-- <strong>Note:</strong> If you see a "Serve static assets with an efficient cache policy" warning in Lighthouse, this is due to GitHub Pages' default cache settings (10 minutes TTL). This cannot be changed from the codebase. All images and assets are optimized for size and performance, and this warning does not impact real-world user experience.
-- Remaining warnings (if any) are due to third-party scripts (YouTube) or hosting limitations (GitHub Pages cache policy) and are documented below.
 
 ##### Index Page
 - ![Index Desktop Score](docs/lighthouse/index-desktop-score.png)
@@ -96,7 +94,9 @@ All major errors and warnings encountered during development were documented and
 #### Mobile Version
 - Mobile scores are similar to desktop, with minor differences due to device emulation and network throttling in Lighthouse.
 - All mobile pages scored 100 in Accessibility, Best Practices and SEO after optimization.
-- Performance in index page and gallery page scored 89, see Note below for explanation.
+- Performance in index page and gallery page scored 89, whilst contact scored 90, and feedback 91, see Note below for explanation.
+- <strong>Note:</strong> If you see a "Serve static assets with an efficient cache policy" warning in Lighthouse, this is due to GitHub Pages' default cache settings (10 minutes TTL). This cannot be changed from the codebase. All images and assets are optimized for size and performance, and this warning does not impact real-world user experience.
+- Remaining warnings (if any) are due to third-party scripts (YouTube) or hosting limitations (GitHub Pages cache policy) and are documented below.
 - All actionable issues were fixed; remaining warnings are due to third-party scripts or hosting limitations.
 
 ##### Index Page

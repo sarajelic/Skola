@@ -25,13 +25,14 @@
   - [Form Feedback Page Content](#form-feedback-page-content)
 - [Future Enhancements](#9-future-enhancements)
 - [Testing Phase](#10-testing-phase)
-- [Deployment](#11-deployment)
-- [Credits](#12-credits)
+- [Additional Notes](#11-additional-notes)
+- [Deployment](#12-deployment)
+- [Credits](#13-credits)
   - [Honorable Mentions](#honorable-mentions)
   - [General Reference](#general-reference)
   - [Content](#content)
   - [Media](#media)
-- [License](#13-license)
+- [License](#14-license)
 
 ## 1. Site Overview
 
@@ -369,7 +370,17 @@ For all general bugs, fixes, and detailed results—including Lighthouse scores,
 
 ---
 
-## 11. Deployment
+## 11. Additional Notes
+
+1. **Code Institute Template Files:**
+   - This project was initially created using a template from Code Institute, which includes files such as `.vscode`, `gitpod.dockerfile`, and `.gitpod.yml`. These files are visible in the GitHub repository but do not appear in the local VS Code workspace, making them inaccessible for deletion through the editor. For future projects using similar templates, I will utilize a `.gitignore` file to exclude any unnecessary files from version control and the repository.
+
+2. **Contact Form Functionality:**
+   - The contact form on the site is currently a mockup and does not send messages. If the band decides to use the website for official purposes, I can integrate the form with their preferred email address using a third-party form service or another method of receiving inquiries and messages, ensuring seamless communication.
+
+---
+
+## 12. Deployment
 
 ### Deployment Process
 
@@ -400,7 +411,7 @@ To deploy the project using **GitHub Pages**:
 
 ---
 
-## 12. Credits
+## 13. Credits
 
 ### Honorable Mentions
 - **Škola Bend** — For their inspiration, feedback, and the opportunity to build their digital presence.
@@ -431,7 +442,7 @@ To deploy the project using **GitHub Pages**:
 
 ---
 
-## 13. License
+## 14. License
 
 This project is licensed under the **MIT License**.  
 See the [LICENSE](LICENSE) file for full details.
